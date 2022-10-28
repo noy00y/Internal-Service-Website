@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+
+#nullable disable
+
+namespace AccessWebsite.Models.Advantage
+{
+    public partial class Customer
+    {
+        public string CompanyCode { get; set; }
+        public string CustomerCode { get; set; }
+        public string CurrencyCode { get; set; }
+        public string CustomerName { get; set; }
+        public string CityName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string CountryCode { get; set; }
+        public string PriceListCode { get; set; }
+        public string StateProvinceCode { get; set; }
+        public string ParentCustomerCode { get; set; }
+        public string TaxCode { get; set; }
+        public string SalesPaymentTermCode { get; set; }
+        public string CarrierCode { get; set; }
+        public string StatementFlag { get; set; }
+        public DateTime? CreationDate { get; set; }
+        public string FreightOnBoardCode { get; set; }
+        public string SalesRepCode { get; set; }
+        public string ShippingWarehouseCode { get; set; }
+        public string CustomerStatusCode { get; set; }
+        public decimal? CreditLimitAmount { get; set; }
+        public decimal? CreditUsedAmount { get; set; }
+        public string CustomerGroup1Code { get; set; }
+        public string CustomerGroup2Code { get; set; }
+        public string CustomerGroup3Code { get; set; }
+        public DateTime? InvoiceDate { get; set; }
+        public string AddressLine1 { get; set; }
+        public string AddressLine2 { get; set; }
+        public string ZipPostalCode { get; set; }
+        public string ContactName { get; set; }
+        public string AddressLine3 { get; set; }
+        public string CreditHoldCode { get; set; }
+        public string CustomerFirstName { get; set; }
+        public string CustomerLastName { get; set; }
+        public string CreditContactName { get; set; }
+        public string CreditContactPhoneNumber { get; set; }
+        public string SalesTerritoryCode { get; set; }
+        public string SalesRegionCode { get; set; }
+        public string SalesDistrictCode { get; set; }
+        public string DunningLetterFlag { get; set; }
+        public string CustomerTypeCode { get; set; }
+        public string StandingOrderNumber { get; set; }
+        public string ServiceContactName { get; set; }
+        public string ServiceContactPhoneNumber { get; set; }
+        public string ServiceComment { get; set; }
+        public string ServiceZoneCode { get; set; }
+        public string FaxNumber { get; set; }
+        public string TaxExemptNumber { get; set; }
+        public string CommissionTerritoryCode { get; set; }
+        public string ContactEmail { get; set; }
+        public string MultipleLevelTaxCode { get; set; }
+        public string CustomerTradingPartnerCode { get; set; }
+        public string BuyingGroupMemberNumber { get; set; }
+        public string CollectorCode { get; set; }
+        public DateTime? CreditReviewDate { get; set; }
+        public string ValueAddedTaxClassCode { get; set; }
+        public string NextSystemSequenceNumber { get; set; }
+        public string ConsolidateInvoiceFlag { get; set; }
+        public string InHouseCustomerFlag { get; set; }
+        public string TimeZoneCode { get; set; }
+        public string GlobalContractNumber { get; set; }
+        public string ServiceWarehouseCode { get; set; }
+        public string CustomerLocationCode { get; set; }
+        public string LanguageCode { get; set; }
+        public string UnitOfMeasureTypeCode { get; set; }
+        public string CustomerInvoiceCopyFlag { get; set; }
+        public string ThirdPartyCustomerCode { get; set; }
+        public string BellContractorFlag { get; set; }
+        public string InvoiceNotPrintFlag { get; set; }
+        public string InvoiceFaxFlag { get; set; }
+        public string InvoiceAdditionalCopyFlag { get; set; }
+        public string InvoiceNotMailFlag { get; set; }
+        public string ElectronicDataInterchangePartnerCode { get; set; }
+        public string AdvancedShipmentNoticeFaxNumber { get; set; }
+        public string AdvancedShipmentNoticeFaxAttentionName { get; set; }
+        public string AdvancedShipmentNoticeFaxJobSiteFlag { get; set; }
+        public string InvoiceFaxNumber { get; set; }
+        public string InvoiceFaxAttentionName { get; set; }
+        public string UnitedStatesFederalIdentificationNumber { get; set; }
+        public string GoodsServicesTaxExemptFlag { get; set; }
+        public string AgentCode { get; set; }
+        public string ProductReferenceGroupCode { get; set; }
+        public string CustomerComment { get; set; }
+        public decimal? HiddenCashDiscountPercent { get; set; }
+        public string ElectronicDataInterchangePartnerShipToCode { get; set; }
+        public string ProvincialSalesTaxLicenceNumber { get; set; }
+        public string InvoiceFaxDeferTime { get; set; }
+        public string ActiveFlag { get; set; }
+        public string RemittanceAddressBuyingGroupCode { get; set; }
+        public string ReportGroupCode { get; set; }
+        public string SalesReferenceCustomerCode { get; set; }
+        public DateTime? TaxExpiryDate { get; set; }
+        public string ElectronicDataInterchangeCriticalFlag { get; set; }
+        public string ThirdPartyInvoiceCopyFlag { get; set; }
+        public string OldBuyingGroupCode { get; set; }
+        public string OldCustomerGroupCode { get; set; }
+        public string AdvancedShipmentNoticeEmail { get; set; }
+        public string NetPriceCode { get; set; }
+        public string CompanyCodeCustomerCodeCustomerName { get; set; }
+        public string CustomerNameCompanyCodeCustomerCode { get; set; }
+        public string CompanyCodeCustomerCode { get; set; }
+        public string ReferenceCustomerCode { get; set; }
+        public string BuyingGroupCode { get; set; }
+        public string CustomerGroupCode { get; set; }
+        public string BillToCustomerCode { get; set; }
+        public string CompanyCodeReferenceCustomerCode { get; set; }
+        public string CompanyCodeBillToCustomerCode { get; set; }
+        public string CountryCodeStateProvinceCodeCityName { get; set; }
+        public string CompanyCodeParentCustomerCode { get; set; }
+        public string PriceClassCode { get; set; }
+        public string StatusFlag { get; set; }
+    }
+}

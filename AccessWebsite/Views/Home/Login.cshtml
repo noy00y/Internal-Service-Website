@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AccessWebsite</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color: #F5F5DC;">
+    <header>
+        <div class="container">
+            <div class="row vh-100 align-items-center justify-content-center">
+                <div class="col-sm-8 col-md-6 col-lg-4 bg-white rounded p-4 shadow">
+                    <div class="row justify-content-center mb-4">
+                        <img src="~/css/logo.jpg" class="w-25" />
+                    </div>
+                    <div class="row justify-content-center mb-4">
+                        Welcome to our On-Line Order Tracking.
+                    </div>
+                    <div class="row justify-content-center mb-4">
+                        Please enter your username and password.
+                    </div>
+                    <form>
+                        <div class="mb-4">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="userHelp" />
+                            <div id="userHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" />
+                        </div>
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember" />
+                            <label class="form-check-label" for="remember">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Login</button>
+                    </form>
+                    <p class="mb-0 text-center"> Don't have an account? <a href="/Identity/Account/Register" class="text-decoration-none">Register Now</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

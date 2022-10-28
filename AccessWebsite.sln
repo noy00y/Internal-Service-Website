@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessWebsite", "AccessWebsite\AccessWebsite.csproj", "{461C0E4F-345A-442F-94E3-26E714A473AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{461C0E4F-345A-442F-94E3-26E714A473AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{461C0E4F-345A-442F-94E3-26E714A473AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{461C0E4F-345A-442F-94E3-26E714A473AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{461C0E4F-345A-442F-94E3-26E714A473AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23108366-D6C3-4655-93FF-7429EF613B2E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsweb.intranet.local/tfs/projectcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AccessWebsite\\AccessWebsite.csproj
+		SccProjectName1 = AccessWebsite
+		SccLocalPath1 = AccessWebsite
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,95 @@
+﻿@model AccessWebsite.Models.Advantage.VMCustomerOrderHeader
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<br /><br />    
+      <div>
+          <h4>Customer Details</h4>
+          <hr />
+          <dl class="row">
+              <dd class="col-sm-10">
+                  @Html.DisplayFor(model => model.customer.CustomerCode)
+              </dd>
+              <dd class="col-sm-10">
+                  @Html.DisplayFor(model => model.customer.AddressLine1)
+              </dd>
+              <dd class="col-sm-10">
+                  @Html.DisplayFor(model => model.customer.CityName) @Html.DisplayFor(model => model.customer.StateProvinceCode) @Html.DisplayFor(model => model.customer.ZipPostalCode)
+              </dd>
+          </dl>
+
+          @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ })
+
+          <br /><br />
+
+          <h4>Order and Shipment Inquiry</h4>
+          <hr />
+          <dl class="row">
+              <dt class="col-sm-2">
+                  @Html.DisplayNameFor(model => model.customer.PhoneNumber)
+              </dt>
+              <dd class="col-sm-10">
+                  @Html.DisplayFor(model => model.customer.PhoneNumber)
+              </dd>
+              <dt class="col-sm-2">
+                  @Html.DisplayNameFor(model => model.customer.ContactName)
+              </dt>
+              <dd class="col-sm-10">
+                  @Html.DisplayFor(model => model.customer.ContactName)
+              </dd>
+          </dl>
+
+          <br /><br />
+
+          <h4>Orders</h4>
+          <hr />
+
+          <div class="container p-3">
+              @if (Model.orders.Count() > 0)
+              {
+                  <table class="table table-bordered table-striped" style="width:100%">
+                      <thead>
+                          <tr>
+                              <th>Sales Order ID</th>
+                              <th>Order Status</th>
+                              <th>Date Shipped</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          @foreach (var order in Model.orders)
+                          {
+                              <tr>
+                                  <!--Order Number-->
+                                  <td width="50%">
+                                      <a asp-controller="Orders" asp-route-Id="@order.DirectSalesOrderHeaderId" asp-action="Details">
+                                          @order.DirectSalesOrderHeaderId
+                                      </a>
+                                  </td>
+
+                                  <!--Order Status-->
+                                  <td width="25%">
+                                      @order.StatusCode
+                                  </td>
+
+                                  <!--Date Shipped-->
+                                  <td width="50%">
+                                      @order.ShippedDate
+                                  </td>
+                              </tr>
+                          }
+                      </tbody>
+                  </table>
+              }
+              else
+              {
+                <p>No orders found.</p>
+              }
+          </div>
+      </div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
